@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Muhammad Haider</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Muhammad Haider</a>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact reveal">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you want to reach me, use the form below or send an email to <a href="mailto:haiderhadi5474@gmail.com" class="email-link"><strong>haiderhadi5474@gmail.com</strong></a>.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" id="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" id="email" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <span id="form-msg" class="form-msg" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Muhammad Haider — Student / Web Developer</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
