@@ -1,5 +1,3 @@
-/* style.css - simple, well-commented styles for your portfolio */
-
 :root{
   --bg:#071025;
   --accent:#6ee7b7;
@@ -21,7 +19,7 @@ body{
   line-height:1.5;
 }
 
-/* Center container used across pages */
+/* Center container */
 .container{
   width:calc(100% - 2rem);
   max-width:var(--max-width);
@@ -69,7 +67,7 @@ body{
   cursor:pointer;
 }
 
-/* HERO: layout for profile image + text */
+/* HERO section */
 .hero{padding:4rem 0}
 .hero-inner{
   display:flex;
@@ -100,7 +98,7 @@ body{
 h2{margin-top:0;color:var(--text)}
 .about, .projects, .contact, .skills, .services, .education, .achievements{padding:3rem 0}
 
-/* CTA Group for multiple buttons */
+/* Buttons & CTA */
 .cta-group{display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.5rem}
 .cta{
   display:inline-block;margin-top:0;background:linear-gradient(90deg,var(--accent),#4fd1c5);
@@ -136,15 +134,7 @@ h2{margin-top:0;color:var(--text)}
 .achievement-item:hover{background:linear-gradient(180deg, rgba(110,231,183,0.08), rgba(110,231,183,0.04));border-color:var(--accent)}
 .achievement-item h3{color:var(--accent);margin-top:0}
 
-/* Project Cards Enhancement */
-.card-header{display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
-.card-header h4{margin:0;flex:1}
-.tech-badge{display:inline-block;background:rgba(110,231,183,0.15);color:var(--accent);padding:0.3rem 0.6rem;border-radius:4px;font-size:0.75rem;font-weight:600}
-.section-intro{color:var(--muted);margin-bottom:2rem;max-width:600px}
-.accent-link{color:var(--accent);text-decoration:none;font-weight:600}
-.accent-link:hover{text-decoration:underline}
-
-/* Project cards */
+/* Cards & Project */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -160,7 +150,7 @@ h2{margin-top:0;color:var(--text)}
 .card h4{margin:0 0 0.5rem 0}
 .card.placeholder{opacity:0.8;color:var(--muted)}
 
-/* Contact form */
+/* Contact Form */
 .contact-form{display:grid;gap:0.75rem;max-width:620px}
 .contact-form label{display:block;font-size:0.9rem;color:var(--muted)}
 .contact-form input,
@@ -173,13 +163,50 @@ h2{margin-top:0;color:var(--text)}
 .btn:hover{background:var(--accent);color:#022024}
 
 /* Footer */
-.site-footer{padding:1.25rem 0;border-top:1px solid rgba(255,255,255,0.02);text-align:center;color:var(--muted)}
+.site-footer {
+  background-color: #071025;
+  color: var(--muted);
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+}
 
-/* Reveal animations for sections (JS toggles .visible) */
+.site-footer small {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footer-social {
+  margin-bottom: 15px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  color: var(--text);
+  border: 1px solid var(--text);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background-color: var(--text);
+  color: #071025;
+  transform: translateY(-3px);
+}
+
+/* Reveal animations */
 .reveal{opacity:0;transform:translateY(12px);transition:all 600ms cubic-bezier(.2,.9,.2,1)}
 .reveal.visible{opacity:1;transform:none}
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width:820px){
   #nav{position:fixed;right:12px;top:64px;background:rgba(2,6,23,0.95);flex-direction:column;padding:0.75rem;border-radius:8px;display:none;transition:opacity 220ms ease}
   #nav.open{display:flex;opacity:1}
@@ -190,7 +217,7 @@ h2{margin-top:0;color:var(--text)}
   .profile-photo{width:96px;height:96px}
 }
 
-/* Utility and larger-screen tweaks */
+/* Utility */
 .muted{color:var(--muted)}
 
 @media (min-width:1000px){
